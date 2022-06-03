@@ -1,0 +1,79 @@
+body {
+    background: #acbce0;
+  font-family: arial;
+  font-size: 13px;
+}
+ul{
+  padding:0;
+  margin:0
+}
+li{
+  list-style:none;
+}
+form {
+  width: 400px;
+  padding: 25px 50px 25px 50px;
+  display: block;
+  margin: 100px auto;
+  border-radius: 3px;
+  color: #000;
+}
+
+form fieldset { margin: 25px 0; border: none;}
+
+.select_wrapper {
+ 
+  line-height: 36px;
+  border-radius: 3px;
+  cursor: pointer;
+  position: relative;
+}
+.select_wrapper span{
+  background: #f5f5f5 url("https://image.flaticon.com/icons/svg/118/118738.svg") no-repeat top 15px right 12px;
+background-size:15px;
+}
+.select_wrapper:hover { background: #fff url("https://image.flaticon.com/icons/svg/118/118738.svg") no-repeat top 15px right 12px; }
+
+.select_wrapper span {
+  display: block;
+  margin: 0;
+      padding: 5px 10px;
+    border-radius: 4px;
+transition:0.4s ease;
+     z-index: 9;
+    position: relative;
+}
+.select_wrapper.openSelect span {
+    display: block;
+    margin: 0;
+    transform: scale(1.04);
+    box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07);
+    -webkit-box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07);
+    box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07);
+}
+.select_wrapper .select_inner {
+  background: #fff;
+ 
+  color: #687278;
+  display: none;
+  position: absolute;
+  left: 0;
+     top: 47px;
+    width: 100%;
+ 
+}
+
+.select_wrapper .select_inner li {
+  border-bottom: 1px solid #eee;
+  padding: 5px 15px;
+  
+  transition:0.4s ease;
+}
+.select_wrapper .select_inner li:hover {
+
+    background: #142b82;
+    color: #fff;
+}
+.select_wrapper .select_inner ul {     border-radius: 5px;
+  
+    background: #fff; }
